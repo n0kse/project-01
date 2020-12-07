@@ -83,8 +83,7 @@ public class Main1 {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        intro(); //TODO УБРАТЬ КОММЕНТАРИЙ С ЭТОЙ СТРОКИ!!!
-        TimeUnit.SECONDS.sleep(1);
+        //intro(); TODO УБРАТЬ КОММЕНТАРИЙ С ЭТОЙ СТРОКИ!!!
         mainMenu();
     }
 
@@ -98,7 +97,7 @@ public class Main1 {
         animationYELLOW(text2);
         animationYELLOW(text3);
         System.out.println();
-        String name = JOptionPane.showInputDialog("Введите идендификатор");;
+        String name = input.nextLine();
         String text4 = "Приятно познакомиться, " + name + ". Я создатель.";
         String text5 = "Дальнейшие указания помогут выжить тебе.";
         String textEXTRA = "Слушай внимате1101000010111011" +
@@ -122,7 +121,6 @@ public class Main1 {
         animationBLACK(text8);
         TimeUnit.SECONDS.sleep(5);
         animationRED(text9);
-        TimeUnit.SECONDS.sleep(2);
         for (int i = 0; i < 50; i++)
             System.out.println();
     }
@@ -131,8 +129,7 @@ public class Main1 {
         String title = "Главное меню";
         animationPURPLE(title); //нет, я не люблю фиолетовый цвет, просто хочу, чтобы эта надпись была фиолетовой!!!
         System.out.println();
-        String choice = "Для продолжения введите номер команды БЕЗ точки";
-        System.out.println();
+        String choice = "Для продолжения введите номер команды";
         String menu1 = "1. Новая игра";
         String menu2 = "2. Загрузить";
         String menu3 = "3. Помощь";
@@ -146,23 +143,14 @@ public class Main1 {
         TimeUnit.MILLISECONDS.sleep(500);
         animationBLACK(menu4);
         TimeUnit.MILLISECONDS.sleep(500);
-        animationRED(choice);
-        TimeUnit.SECONDS.sleep(1);
-        String answ = JOptionPane.showInputDialog("Введите номер дейсвтия");
+        animationBLACK(choice);
+        String answ = JOptionPane.showInputDialog("Введите номер команды");
         int answ1 = Integer.parseInt(answ.trim());
         switch (answ1) {
             case 1:
-<<<<<<< Updated upstream
-                System.out.println("1");
-                instruction();
-                //String answ = JOptionPane.showInputDialog("Confirm?");
-               // System.out.println(answ);
-
-=======
                 instruction();
                 TimeUnit.SECONDS.sleep(5);
                 newGame();
->>>>>>> Stashed changes
                 break;
                 /*
                 TODO CODE HERE
@@ -196,15 +184,6 @@ public class Main1 {
     }
 
     public static void instruction() throws InterruptedException {
-<<<<<<< Updated upstream
-        String text1 = "Внимаение! Сейчас вам предстоит прослушать инструктаж";
-        String text2 = "От того, как вы усвоите его, зависит ваша жизнь";
-        String text3 = "1. При вводе команд, вводите число БЕЗ дополнительных знаков ";
-        String text4 = "2. Относитесь к системе коммуникации с осторожностью.";
-        String text5 = "Это ваше иденственное спасение";
-        String text6 = "3. Выполняйте все указания, чтобы остаться в живых";
-        String text7 = "4. Если в ходе игрового процесса возникнет вопрос, введите /help ";
-=======
         String text1 = "Внимаение! Сейчас вам предстоит прослушать инструктаж.";
         String text2 = "От того, как вы усвоите его, зависит ваша жизнь.";
         String text3 = "1. При вводе команд, вводите число БЕЗ дополнительных знаков.";
@@ -212,7 +191,6 @@ public class Main1 {
         String text5 = "Это ваше иденственное спасение.";
         String text6 = "3. Выполняйте все указания, чтобы остаться в живых.";
         String text7 = "4. Если в ходе игрового процесса возникнет вопрос, введите /help . ";
->>>>>>> Stashed changes
         animationRED(text1);
         TimeUnit.MILLISECONDS.sleep(500);
         animationWHITE(text2);
@@ -227,8 +205,6 @@ public class Main1 {
         TimeUnit.MILLISECONDS.sleep(500);
         animationWHITE(text7);
     }
-<<<<<<< Updated upstream
-=======
 
     public static void newGame() {
 
@@ -237,5 +213,4 @@ public class Main1 {
     public static void load() {
 
     }
->>>>>>> Stashed changes
 }
