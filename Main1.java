@@ -83,7 +83,7 @@ public class Main1 {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        //intro(); TODO УБРАТЬ КОММЕНТАРИЙ С ЭТОЙ СТРОКИ!!!
+        intro(); //TODO УБРАТЬ КОММЕНТАРИЙ С ЭТОЙ СТРОКИ!!!
         mainMenu();
     }
 
