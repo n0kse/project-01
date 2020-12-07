@@ -83,7 +83,8 @@ public class Main1 {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        //intro(); TODO УБРАТЬ КОММЕНТАРИЙ С ЭТОЙ СТРОКИ!!!
+        intro(); //TODO УБРАТЬ КОММЕНТАРИЙ С ЭТОЙ СТРОКИ!!!
+        TimeUnit.SECONDS.sleep(1);
         mainMenu();
     }
 
@@ -97,7 +98,7 @@ public class Main1 {
         animationYELLOW(text2);
         animationYELLOW(text3);
         System.out.println();
-        String name = input.nextLine();
+        String name = JOptionPane.showInputDialog("Введите идендификатор");;
         String text4 = "Приятно познакомиться, " + name + ". Я создатель.";
         String text5 = "Дальнейшие указания помогут выжить тебе.";
         String textEXTRA = "Слушай внимате1101000010111011" +
@@ -121,6 +122,7 @@ public class Main1 {
         animationBLACK(text8);
         TimeUnit.SECONDS.sleep(5);
         animationRED(text9);
+        TimeUnit.SECONDS.sleep(2);
         for (int i = 0; i < 50; i++)
             System.out.println();
     }
