@@ -152,11 +152,17 @@ public class Main1 {
         int answ1 = Integer.parseInt(answ.trim());
         switch (answ1) {
             case 1:
+<<<<<<< Updated upstream
                 System.out.println("1");
                 instruction();
                 //String answ = JOptionPane.showInputDialog("Confirm?");
                // System.out.println(answ);
 
+=======
+                instruction();
+                TimeUnit.SECONDS.sleep(5);
+                newGame();
+>>>>>>> Stashed changes
                 break;
                 /*
                 TODO CODE HERE
@@ -190,6 +196,7 @@ public class Main1 {
     }
 
     public static void instruction() throws InterruptedException {
+<<<<<<< Updated upstream
         String text1 = "Внимаение! Сейчас вам предстоит прослушать инструктаж";
         String text2 = "От того, как вы усвоите его, зависит ваша жизнь";
         String text3 = "1. При вводе команд, вводите число БЕЗ дополнительных знаков ";
@@ -197,6 +204,15 @@ public class Main1 {
         String text5 = "Это ваше иденственное спасение";
         String text6 = "3. Выполняйте все указания, чтобы остаться в живых";
         String text7 = "4. Если в ходе игрового процесса возникнет вопрос, введите /help ";
+=======
+        String text1 = "Внимаение! Сейчас вам предстоит прослушать инструктаж.";
+        String text2 = "От того, как вы усвоите его, зависит ваша жизнь.";
+        String text3 = "1. При вводе команд, вводите число БЕЗ дополнительных знаков.";
+        String text4 = "2. Относитесь к системе коммуникации с осторожностью.";
+        String text5 = "Это ваше иденственное спасение.";
+        String text6 = "3. Выполняйте все указания, чтобы остаться в живых.";
+        String text7 = "4. Если в ходе игрового процесса возникнет вопрос, введите /help . ";
+>>>>>>> Stashed changes
         animationRED(text1);
         TimeUnit.MILLISECONDS.sleep(500);
         animationWHITE(text2);
@@ -211,4 +227,15 @@ public class Main1 {
         TimeUnit.MILLISECONDS.sleep(500);
         animationWHITE(text7);
     }
+<<<<<<< Updated upstream
+=======
+
+    public static void newGame() {
+
+    }
+
+    public static void load() {
+
+    }
+>>>>>>> Stashed changes
 }
