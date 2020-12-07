@@ -207,10 +207,10 @@ public class Main1 {
     }
 
     public static void newGame() {
-
+    //todo code here
     }
 
     public static void load() {
-
+    //todo code here
     }
 }
